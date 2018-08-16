@@ -1,0 +1,8 @@
+images:
+  logo: assets/images/logo_main.png
+  social:
+    facebook_logo: assets/images/social/facebook-logo.svg
+    linkedin_logo: assets/images/social/linkedin-logo.svg
+    youtube_logo: assets/images/social/youtube-play-button.svg
+    twitter_logo: assets/images/social/twitter-logo.svg
+  menu: assets/images/menu.svg
