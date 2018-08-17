@@ -2,4 +2,25 @@ section.h-section__intro {
   width: 100%;
   min-height: 479px;
   background-color: #D8D8D8;
+  display: grid;
+  grid-template-rows: 338px auto;
+  align-items: center;
+
+  .bottom__text {
+    display: grid;
+    grid-row-start: 2;
+    justify-self: end;
+    align-self: start;
+    padding-right: 110px;
+
+    h1 {
+      color: white;
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .bottom__cta {
+      justify-self: end;
+    }
+  }
 }

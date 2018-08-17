@@ -3,26 +3,60 @@ header {
   position: absolute;
   width: 100%;
   grid-template-rows: 31px auto;
+  padding-left: 100px;
+  padding-right: 100px;
 
   .header__wrapper {
     width: 100%;
     display: grid;
     grid-row-start: 2;
     grid-auto-flow: row;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0.5fr));
     align-items: center;
 
+    .header__logo {
+      justify-self: left;
+    }
     .header__logo > img {
       max-width: 249px;
     }
-    .header__social > img {
-      width: 16px;
-      height: 16px;
-    }
 
-    .header__link > a {
-      text-transform: uppercase;
-      color: white;
+    .header__links {
+      display: grid;
+      grid-column-start: 4;
+      grid-template-columns: minmax(150px, 1fr) auto auto auto;
+      align-items: center;
+      justify-content: right;
+
+      .header__social {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(36px, 36px));
+        justify-content: right;
+        padding-right: 45px;
+      }
+      .header__social > img {
+        justify-self: center;
+        width: 16px;
+        height: 16px;
+      }
+
+      .header__link {
+        justify-self: center;
+        &.blog {
+          padding-right: 35px;
+        }
+        &.contact {
+          padding-right: 75px;
+        }
+      }
+      .header__link > a {
+        text-transform: uppercase;
+        color: white;
+      }
+
+      .header__menu {
+        justify-self: center;
+      }
     }
 
   }

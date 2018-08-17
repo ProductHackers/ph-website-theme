@@ -1,0 +1,17 @@
+.cta__button {
+  background-color: $brand-color;
+  width: 170px;
+  height: 46px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+
+  .cta__text {
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+}
