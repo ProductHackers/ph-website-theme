@@ -1,3 +1,7 @@
+body {
+  background-color: #D8D8D8; 
+}
+
 section.h-section__intro {
   width: 100%;
   min-height: 479px;
@@ -21,6 +25,17 @@ section.h-section__intro {
 
     .bottom__cta {
       justify-self: end;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .bottom__text {
+      justify-self: center;
+      padding-left: 17px;
+      padding-right: 17px;
+      .bottom__cta {
+        justify-self: center;
+      }
     }
   }
 }
