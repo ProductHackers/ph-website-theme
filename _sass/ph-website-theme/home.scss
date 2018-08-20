@@ -1,7 +1,3 @@
-body {
-  background-color: #D8D8D8; 
-}
-
 section.h-section__intro {
   width: 100%;
   min-height: 479px;
@@ -37,5 +33,133 @@ section.h-section__intro {
         justify-self: center;
       }
     }
+  }
+}
+
+section.h-section__context {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  .context__paragraph {
+    font-weight: 300;
+    font-size: 17px;
+    color: #4A4A4A;
+
+    &.first {
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-column-end: span 2;
+      max-width: 60%;
+    }
+    &.second {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      grid-column-end: span 2;
+      text-align: right;
+      max-width: 60%;
+      justify-self: end;
+    }
+    &.third {
+      grid-row-start: 3;
+      grid-column-start: 1;
+      grid-column-end: span 2;
+      max-width: 60%;
+    }
+  }
+
+  .context__paragraph > h2 {
+    font-weight: 800;
+    font-size: 22px;
+    color: #4A4A4A;
+    &.highlighted {
+      font-size: 28px;
+      color: #F92300;
+    }
+  }
+}
+
+section.h-section__quote {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  padding-left: 109px;
+  padding-right: 109px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  font-weight: 300;
+  color: white;
+  font-size: 19px;
+  background-color: #4A4A4A;
+}
+
+section.h-section__brands {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 145px);
+  grid-column-gap: 38px;
+  grid-row-gap: 50px;
+  justify-content: center;
+  justify-items: center;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .brand {
+    background-color: #D8D8D8;
+    width: 100%;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section.h-section__context {
+    grid-template-columns: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 31px;
+    padding-bottom: 50px;
+
+    .context__paragraph {
+      text-align: center;
+      font-size: 16px;
+      &.first {
+        max-width: 100%;
+      }
+      &.second {
+        max-width: 100%;
+        justify-self: center;
+        text-align: center;
+      }
+      &.third {
+        max-width: 100%;
+      }
+    }
+    .context__paragraph > h2 {
+      font-weight: 800;
+      font-size: 18px;
+      color: #4A4A4A;
+      &.highlighted {
+        font-size: 20px;
+        color: #F92300;
+      }
+    }
+  }
+
+  section.h-section__quote {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
