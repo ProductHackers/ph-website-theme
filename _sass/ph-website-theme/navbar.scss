@@ -83,6 +83,10 @@ header {
   header > .header__wrapper > .header__links > .header__link {
     display: none;
   }
+  header > .header__wrapper > .header__links > .header__menu {
+    justify-self: end;
+    padding-right: 27px;
+  }
 }
 
 @media screen and (max-width: 375px) {

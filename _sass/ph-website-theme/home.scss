@@ -80,7 +80,7 @@ section.h-section__context {
     color: #4A4A4A;
     &.highlighted {
       font-size: 28px;
-      color: #F92300;
+      color: $brand-color;
     }
   }
 }
@@ -104,11 +104,11 @@ section.h-section__brands {
   width: 100%;
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 145px);
+  grid-template-columns: repeat(auto-fit, minmax(145px, max-content));
+  grid-auto-flow: row dense;
   grid-column-gap: 38px;
   grid-row-gap: 50px;
   justify-content: center;
-  justify-items: center;
   padding-left: 110px;
   padding-right: 110px;
   padding-top: 100px;
@@ -118,6 +118,70 @@ section.h-section__brands {
     background-color: #D8D8D8;
     width: 100%;
     height: 100px;
+  }
+}
+
+section.h-section__contact {
+  width: 100%;
+  background-color: $brand-color;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  .contact__info {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 58px;
+    padding-bottom: 70px;
+    text-align: center;
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    span {
+      text-transform: uppercase;
+      padding-right: 5px;
+    }
+    .contact__social {
+      padding-top: 25px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(36px, min-content));
+      justify-content: center;
+    }
+    .contact__social > img {
+      justify-self: center;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .contact__location {
+    position: relative;
+    grid-column-start: 2;
+    .mapouter {
+      height: 100%;
+      width: 100%;
+    }
+    .gmap_canvas {
+      overflow: hidden;
+      background: none;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .contact__location:before {
+    content:"";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $brand-color;
+    opacity: 0.4;
+    pointer-events: none;
   }
 }
 
@@ -150,7 +214,7 @@ section.h-section__brands {
       color: #4A4A4A;
       &.highlighted {
         font-size: 20px;
-        color: #F92300;
+        color: $brand-color;
       }
     }
   }
@@ -161,5 +225,55 @@ section.h-section__brands {
     padding-right: 20px;
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+
+  section.h-section__brands {
+    max-width: 100%;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    grid-template-columns: repeat(auto-fill, minmax(131px, 1fr));
+    justify-content: start;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .brand {
+      width: 131px;
+      height: 86px;
+    }
+  }
+
+  section.h-section__contact {
+    grid-template-rows: repeat(2, minmax(353px, 1fr));
+    grid-template-columns: 100%;
+
+    .contact__info {
+      width: 100%;
+      grid-column-start: 1;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 30px;
+      padding-bottom: 31px;
+      span {
+        text-transform: uppercase;
+        padding-right: 5px;
+      }
+      .contact__social {
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(36px, min-content));
+        justify-content: center;
+      }
+      .contact__social > img {
+        justify-self: center;
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .contact__location {
+      width: 100%;
+      grid-column-start: 1;
+    }
   }
 }
