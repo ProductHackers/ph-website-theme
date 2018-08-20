@@ -1,3 +1,5 @@
+{% include menu.html %}
+
 <header>
   <div class="header__wrapper">
     <div class="header__logo">
@@ -16,9 +18,12 @@
       <div class="header__link contact">
         <a href="#">contacto</a>
       </div>
-      <div class="header__menu">
-        <img src={{ site.images.menu | relative_url }} />
+      <div id="menu-button" class="header__menu menu-wrapper">
+        <div id="hamburger-menu" class="hamburger-menu"></div>	  
       </div>
+      <!-- <div id="menu-button" class="header__menu">
+        <img src={{ site.images.menu | relative_url }} />
+      </div> -->
     </div>
   </div>
 </header>

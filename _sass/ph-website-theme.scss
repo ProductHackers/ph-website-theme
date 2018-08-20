@@ -12,6 +12,7 @@ $spacing-unit:     30px !default;
 $text-color:       #4A4A4A !default;
 $background-color: #fdfdfd !default;
 $brand-color:      #F92300 !default;
+$menu-background: #4A4A4A !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -38,5 +39,7 @@ $on-laptop:        800px !default;
 "ph-website-theme/main",
 "ph-website-theme/home",
 "ph-website-theme/navbar",
+"ph-website-theme/footer",
+"ph-website-theme/menu",
 "ph-website-theme/buttons/cta"
 ;
