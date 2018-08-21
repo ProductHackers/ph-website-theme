@@ -1,16 +1,14 @@
-{% include menu.html %}
-
 <header>
   <div class="header__wrapper">
     <div class="header__logo">
-      <img src={{ site.images.logo | relative_url }} />
+      <img class="inline-svg" src={{ site.images.logo_svg | relative_url }} />
     </div>
     <div class="header__links">
       <div class="header__social">
-        <img src={{ site.images.social.facebook_logo | relative_url }} />
-        <img src={{ site.images.social.twitter_logo | relative_url }} />
-        <img src={{ site.images.social.youtube_logo | relative_url }} />
-        <img src={{ site.images.social.linkedin_logo | relative_url }} />
+        <img class="inline-svg" src={{ site.images.social.facebook_logo | relative_url }} />
+        <img class="inline-svg" src={{ site.images.social.twitter_logo | relative_url }} />
+        <img class="inline-svg" src={{ site.images.social.youtube_logo | relative_url }} />
+        <img class="inline-svg" src={{ site.images.social.linkedin_logo | relative_url }} />
       </div>
       <div class="header__link blog">
         <a href="#">blog</a>
@@ -19,11 +17,13 @@
         <a href="#">contacto</a>
       </div>
       <div id="menu-button" class="header__menu menu-wrapper">
-        <div id="hamburger-menu" class="hamburger-menu"></div>	  
+        <div id="hamburger-menu" class="hamburger-menu">
+          <div class="hamburger-menu topbar"></div>
+          <div class="hamburger-menu bottombar"></div>
+        </div>	  
       </div>
-      <!-- <div id="menu-button" class="header__menu">
-        <img src={{ site.images.menu | relative_url }} />
-      </div> -->
     </div>
   </div>
 </header>
+
+{% include menu.html %}

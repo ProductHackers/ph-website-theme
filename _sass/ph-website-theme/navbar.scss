@@ -1,15 +1,24 @@
 header {
-  position: absolute;
+  position: fixed;
   display: grid;
   width: 100%;
-  grid-template-rows: 31px auto;
+  height: 105px;
+  grid-template-rows: auto;
   padding-left: 100px;
   padding-right: 100px;
+
+  &.scroll {
+    background-color: white;
+    box-shadow: 0 1px 25px 2px rgba(216, 216, 216, 0.34);
+  }
+  &.menu-open {
+    position: absolute;
+    top: 0px;
+  }
 
   .header__wrapper {
     width: 100%;
     display: grid;
-    grid-row-start: 2;
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(350px, 0.5fr));
     grid-auto-columns: auto;
@@ -17,9 +26,20 @@ header {
 
     .header__logo {
       justify-self: left;
+      svg {
+        width: 249px;
+        height: 50px;
+      }
+      svg > #Capa_2 > g > path.st1 {
+        fill: white;
+        transition: fill 0.3s ease-out;
+        &.scroll {
+          fill: #322E2C;
+        }
+      }
     }
     .header__logo > img {
-      max-width: 249px;
+      width: 249px;
     }
 
     .header__links {
@@ -34,6 +54,18 @@ header {
         grid-template-columns: repeat(auto-fit, minmax(36px, 36px));
         justify-content: right;
         padding-right: 45px;
+        svg {
+          justify-self: center;
+          width: 16px;
+          height: 16px;
+        }
+        svg > g > path {
+          fill: white;
+          transition: fill 0.3s ease-out;
+          &.scroll {
+            fill: #322E2C;
+          }
+        }
       }
       .header__social > img {
         justify-self: center;
@@ -53,6 +85,10 @@ header {
       .header__link > a {
         text-transform: uppercase;
         color: white;
+        transition: color 0.3s ease-out;
+        &.scroll {
+          color: $text-color-negative;
+        }
       }
 
       .header__menu {
@@ -80,42 +116,79 @@ header {
             position: relative;
             transform: translateY($bar-spacing);
             background: rgba(255, 255, 255, 1);
-            transition: all 0ms 300ms;
+            // transition: all 0ms 300ms;
+            transition: background 0.3s ease-out;
+
+            &.topbar {
+              position: absolute;
+              bottom: 16px;
+              transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+            &.bottombar {
+              position: absolute;
+              bottom: 0px;
+              transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
             
             &.animate {
               background: rgba(255, 255, 255, 0); 
             }
+            &.animate > .topbar {
+              position: absolute;
+              top: 0;
+              transform: rotate(45deg);
+              transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+            &.animate > .bottombar {
+              position: absolute;
+              bottom: 0;
+              transform: rotate(-45deg);
+              transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+
+            &.scroll {
+              background: rgba(0, 0, 0, 1);
+              .topbar {
+                background: rgba(0, 0, 0, 1);
+              }
+              .bottombar {
+                background: rgba(0, 0, 0, 1);
+              }
+              &.animate {
+                background: rgba(255, 255, 255, 0); 
+              }
+            }
           }
 
-          .hamburger-menu:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: $bar-spacing;
-            background: rgba(255, 255, 255, 1);
-            transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-          }
+          // .hamburger-menu:before {
+          //   content: '';
+          //   position: absolute;
+          //   left: 0;
+          //   bottom: $bar-spacing;
+          //   background: rgba(255, 255, 255, 1);
+          //   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+          // }
 
-          .hamburger-menu:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: $bar-spacing;
-            background: rgba(255, 255, 255, 1);
-            transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-          }
+          // .hamburger-menu:after {
+          //   content: '';
+          //   position: absolute;
+          //   left: 0;
+          //   top: $bar-spacing;
+          //   background: rgba(255, 255, 255, 1);
+          //   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+          // }
 
-          .hamburger-menu.animate:after {
-            top: 0;
-            transform: rotate(45deg);
-            transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
-          }
+          // .hamburger-menu.animate:after {
+          //   top: 0;
+          //   transform: rotate(45deg);
+          //   transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+          // }
 
-          .hamburger-menu.animate:before {
-            bottom: 0;
-            transform: rotate(-45deg);
-            transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
-          }
+          // .hamburger-menu.animate:before {
+          //   bottom: 0;
+          //   transform: rotate(-45deg);
+          //   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+          // }
         }
       }
     }

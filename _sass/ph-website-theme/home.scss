@@ -12,6 +12,8 @@ section.h-section__intro {
     justify-self: end;
     align-self: start;
     padding-right: 110px;
+    line-height: 20px;
+    text-align: center;
 
     h1 {
       color: white;
@@ -50,6 +52,7 @@ section.h-section__context {
   .context__paragraph {
     font-weight: 300;
     font-size: 17px;
+    line-height: 26px;
     color: #4A4A4A;
 
     &.first {
@@ -95,6 +98,7 @@ section.h-section__quote {
   padding-top: 48px;
   padding-bottom: 48px;
   font-weight: 300;
+  line-height: 28px;
   color: white;
   font-size: 19px;
   background-color: #4A4A4A;
@@ -136,6 +140,7 @@ section.h-section__contact {
     padding-top: 58px;
     padding-bottom: 70px;
     text-align: center;
+    line-height: 24px;
     h2 {
       font-size: 16px;
       font-weight: 700;
@@ -186,6 +191,10 @@ section.h-section__contact {
 }
 
 @media screen and (max-width: 800px) {
+  section > * {
+    line-height: 24px;
+  }
+
   section.h-section__context {
     grid-template-columns: 100%;
     padding-left: 20px;

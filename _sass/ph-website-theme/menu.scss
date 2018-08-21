@@ -11,10 +11,12 @@ menu.ph-menu {
   opacity: 0.97;
   transition: all 0.3s ease-out;
   background-color: #4A4A4A;
-  transform: translate3d(0px, -100%, 0px);
+  transform: translateY(-100%);
+  visibility: hidden;
 
   &.visible {
-    transform: translate3d(0px, 0px, 0px);
+    transform: translateY(0px);
+    visibility: visible;
   }
 
   .menu__wrapper {
@@ -31,6 +33,7 @@ menu.ph-menu {
       font-weight: 900;
       text-align: center;
       padding: 0;
+      line-height: 84px;
 
       a > li {
         color: white;
@@ -45,5 +48,6 @@ menu.ph-menu {
 @media screen and (max-width: 400px) {
   menu.ph-menu > .menu__wrapper > ul {
     font-size: 30px;
+    line-height: 54px;
   }
 }

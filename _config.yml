@@ -1,5 +1,6 @@
 images:
   logo: assets/images/logo_main.png
+  logo_svg: assets/images/logo_ph.svg
   social:
     facebook_logo: assets/images/social/facebook-logo.svg
     linkedin_logo: assets/images/social/linkedin-logo.svg

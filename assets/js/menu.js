@@ -1,47 +1,31 @@
 (function() {
   window.addEventListener('load', function() {
-    // left: 37, up: 38, right: 39, down: 40,
-    // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-    var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-    function preventDefault(e) {
-      e = e || window.event;
-      if (e.preventDefault)
-          e.preventDefault();
-      e.returnValue = false;  
-    }
-
-    function preventDefaultForScrollKeys(e) {
-        if (keys[e.keyCode]) {
-            preventDefault(e);
-            return false;
-        }
-    }
-
-    function disableScroll() {
-      if (window.addEventListener) // older FF
-          window.addEventListener('DOMMouseScroll', preventDefault, false);
-      window.onwheel = preventDefault; // modern standard
-      window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-      window.ontouchmove  = preventDefault; // mobile
-      document.onkeydown  = preventDefaultForScrollKeys;
-    }
-
-    function enableScroll() {
-        if (window.removeEventListener)
-            window.removeEventListener('DOMMouseScroll', preventDefault, false);
-        window.onmousewheel = document.onmousewheel = null; 
-        window.onwheel = null; 
-        window.ontouchmove = null;  
-        document.onkeydown = null;  
-    }
-
     var displayMenu = function() {
-      // disableScroll();
       document.body.classList.toggle('noScroll');
+
+      if (document.getElementsByTagName('header')[0].classList.contains('menu-open')) {
+        setTimeout(function() {
+          document.getElementsByTagName('header')[0].classList.toggle('menu-open');
+        }, 300);
+      } else {
+        document.getElementsByTagName('header')[0].classList.toggle('menu-open');
+      }
+
       document.getElementById('hamburger-menu').classList.toggle('animate');
       document.getElementById('ph-menu').classList.toggle('visible');
+
+      if (window.scrollY > 0) {
+        document.getElementsByTagName('header')[0].style.top = window.scrollY + 'px'; 
+        if (!document.getElementById('ph-menu').classList.contains('visible')) {
+          setTimeout(function() {
+            document.getElementsByTagName('header')[0].style.top = '0px'; 
+          }, 300);
+        }
+      } else {
+        
+      }
     };
+
     var menuButton = document.getElementById('menu-button');
     menuButton.addEventListener('click', displayMenu);
   });
