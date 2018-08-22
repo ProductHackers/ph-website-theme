@@ -5,11 +5,21 @@
     inlineSVG.init({
       svgSelector: 'img.inline-svg',
       initClass: 'js-inlinesvg',
-    }, function() {
-      console.log('finished')
     });
 
-    document.body.classList.toggle('noScroll');
+    document.body.classList.remove('noScroll');
+    var checkNavbar = setInterval(function() {
+      if (
+        document.getElementById('Capa_2') &&
+        document.getElementById('fb_svg') &&
+        document.getElementById('linkedin_svg') && 
+        document.getElementById('twitter_svg') && 
+        document.getElementById('youtube_svg')
+      ) {
+        clearInterval(checkNavbar);
+        if (window.scrollY > 80) setNavbarScrolled();
+      };
+    }, 100);
 
     var setNavbarScrolled = function() {
       scrolled = true; 
@@ -44,10 +54,6 @@
     document.addEventListener('scroll', function() {
       if (window.scrollY > 80 && !scrolled) setNavbarScrolled(); 
         else if (window.scrollY <= 0) setNavbarTop(); 
-      
-      setTimeout(function() {
-        scrolled = false;
-      }, 500);
     });
   });
 })();
