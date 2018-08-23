@@ -19,10 +19,29 @@ section.h-section__intro {
       color: white;
       font-size: 18px;
       font-weight: 300;
+      margin: 0;
     }
 
     .bottom__cta {
       justify-self: end;
+      margin-top: 25px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    min-height: 320px;
+    grid-template-rows: 189px auto;
+    .bottom__text {
+      justify-self: center;
+      padding-left: 17px;
+      padding-right: 17px;
+      h1 {
+        margin: 0;
+      }
+      .bottom__cta {
+        justify-self: center;
+        margin-top: 24px;
+      }
     }
   }
 
@@ -31,6 +50,9 @@ section.h-section__intro {
       justify-self: center;
       padding-left: 17px;
       padding-right: 17px;
+      h1 {
+        margin: 0;
+      }
       .bottom__cta {
         justify-self: center;
       }
