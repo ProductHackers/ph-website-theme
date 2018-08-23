@@ -1,6 +1,7 @@
 (function() {
   window.addEventListener('load', function() {
     var displayMenu = function() {
+
       document.body.classList.toggle('noScroll');
 
       if (document.getElementsByTagName('header')[0].classList.contains('menu-open')) {
@@ -21,8 +22,6 @@
             document.getElementsByTagName('header')[0].style.top = '0px'; 
           }, 300);
         }
-      } else {
-        
       }
     };
 

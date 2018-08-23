@@ -27,6 +27,10 @@ header {
 
     .header__logo {
       justify-self: left;
+      a {
+        position: relative;
+        display: inline-block;
+      }
       svg {
         width: 249px;
         height: 50px;
@@ -194,7 +198,7 @@ header {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   header {
     height: 54px;
   }
