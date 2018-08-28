@@ -26,9 +26,11 @@ layout: default
     {% endif %}
     <div class="{{ "context__paragraph" | append: " " | append: style }}">
       <h2 class="highlighted"><span class="text">{{ block.title }}</span></h2>
-      {% for paragraph in block.text %}
-        <p>{{ paragraph }}</p>
-      {% endfor %}
+      <div class="panel">
+        {% for paragraph in block.text %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
     </div>
   {% endfor %}
 </section>

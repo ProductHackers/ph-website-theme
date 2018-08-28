@@ -4,6 +4,12 @@
     accordionClickable.forEach(function(item) {
       item.addEventListener('click', function(e) {
         item.parentNode.classList.toggle('expand');
+        var panel = item.parentNode.querySelector('.panel');
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = `${panel.scrollHeight}px`;
+        }
       });
     });
   });
