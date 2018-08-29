@@ -48,6 +48,10 @@
       "image": "planeta.jpg"
     },
     {
+      "name": "Dive",
+      "image": "dive.png"
+    },
+    {
       "name": "La Razón",
       "image": "la_razon.png"
     },
@@ -58,6 +62,10 @@
     {
       "name": "Cruz Roja Española",
       "image": "cruzroja.png"
+    },
+    {
+      "name": "G+J",
+      "image": "gj.jpg"
     }
   ],
   "section_contact": {

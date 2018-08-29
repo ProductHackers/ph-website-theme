@@ -175,6 +175,7 @@ section.h-section__team {
           align-self: start;
           line-height: 29px;
           margin-top: 2px;
+          text-align: center;
         }
       }
       .overlay:hover {
@@ -301,6 +302,16 @@ section.h-section__contact {
     background-color: $brand-color;
     opacity: 0.4;
     pointer-events: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section.h-section__context {
+    .context__paragraph {
+      &.left,&.right {
+        max-width: 40%;
+      }
+    }
   }
 }
 

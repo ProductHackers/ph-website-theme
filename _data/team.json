@@ -1,63 +1,63 @@
 {
   "team": [
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "Luis Díaz",
+      "job": "CEO & founder",
       "image": "dummy.jpg"
     },
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "Jorge García",
+      "job": "CTO & founder",
       "image": "dummy.jpg"
     },
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "Raquel Carmona",
+      "job": "Product designer",
       "image": "dummy.jpg"
     },
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "Juan Escalante",
+      "job": "Operations",
       "image": "dummy.jpg"
     },
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "José Serrano",
+      "job": "Product owner",
       "image": "dummy.jpg"
     },
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "Andrés Fulla",
+      "job": "Front-end developer",
       "image": "dummy.jpg"
     },
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "David Cervantes",
+      "job": "Back-end developer",
       "image": "dummy.jpg"
     },
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "Juan Angosto",
+      "job": "Back-end developer",
       "image": "dummy.jpg"
     },
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "Miguel Martín-Nieto",
+      "job": "iOS developer",
       "image": "dummy.jpg"
     },
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "José Rivera",
+      "job": "Back-end developer",
       "image": "dummy.jpg"
     },
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "Beatriz Pañeda",
+      "job": "Content creator & paid social",
       "image": "dummy.jpg"
     },
     {
-      "name": "Carles Puigdemont",
-      "job": "Colonizador",
+      "name": "Lucía Morollón",
+      "job": "Content creator",
       "image": "dummy.jpg"
     }
   ]

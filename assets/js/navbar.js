@@ -1,3 +1,5 @@
+var setNavbarScrolled, setNavbarTop; 
+
 (function() {
   window.addEventListener('load', function() {
     var scrolled = false;
@@ -21,7 +23,7 @@
       };
     }, 100);
 
-    var setNavbarScrolled = function() {
+    setNavbarScrolled = function() {
       scrolled = true; 
       document.body.classList.add('headerScroll');
       document.getElementsByTagName('header')[0].classList.add('scroll');
@@ -35,7 +37,7 @@
       document.getElementById('hamburger-menu').classList.add('scroll');
     }
 
-    var setNavbarTop = function() {
+    setNavbarTop = function() {
       scrolled = false;
       document.body.classList.remove('headerScroll');
       document.getElementsByTagName('header')[0].classList.remove('scroll');
