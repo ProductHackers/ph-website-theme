@@ -5,41 +5,37 @@ layout: default
 
 <section class="h-section__join">
   <div class="intro__text">
-    <h1 class="hero__text">¿Eres un product hacker?</h1>
-    <p>
-      The monkey-rope is found in all whalers; but it was only in the Pequod that the monkey and his holder were ever tied together.
-      This improvement upon the original usage was introduced by no less a man than Stubb, in order to afford the imperilled
-      harpooneer the strongest possible guarantee for the faithfulness and vigilance of his monkey-rope holder.
-    </p>
+    <h1 class="hero__text">{{ site.data.unete.section_join.hero_text }}</h1>
+    <p>{{ site.data.unete.section_join.text }}</p>
   </div>
 </section>
 
 <section class="h-section__about">
   <div class="big__text">
-    <h1 class="hero__text">Esto es todo sobre nosotros</h1>
+    <h1 class="hero__text">{{ site.data.unete.section_about.hero_text }}</h1>
   </div>
   <div class="about__text">
-    <p class="first">
-      This improvement upon the original usage was introduced by no less a man than Stubb, 
-      in order to afford the imperilled harpooneer the strongest possible guarantee for the faith.
-    </p>
-    <p class="second">
-      The monkey-rope is found in all whalers; but it was only in the Pequod that the monkey and his holder were ever tied together. 
-    </p>
+    <p class="first">{{ site.data.unete.section_about.first_p }}</p>
+    <p class="second">{{ site.data.unete.section_about.second_p }}</p>
   </div>
 </section>
 
-<section class="h-section__team">
-  <h1 class="hero__text">Únete al equipo</h1>
-  <div class="team__caretos">
-    <div class="hacker"></div>
-    <div class="hacker"></div>
-    <div class="hacker"></div>
-    <div class="hacker"></div>
-    <div class="hacker"></div>
-    <div class="hacker"></div>
+{% if site.data.unete.section_hiring.available_jobs %}
+<section class="h-section__hiring">
+  <h1 class="hero__text">{{ site.data.unete.section_hiring.hero_text }}</h1>
+  <div class="hiring__card">
+    {% for job in site.data.unete.section_hiring.available_jobs %}
+      <div class="job">
+        <div class="overlay">
+          <p class="name">{{ job.name }}</p>
+          <span class="plus__icon"><img src="assets/images/plus_icon.svg" alt="plus icon" /></span>
+        </div>
+        <img src="{{ site.baseurl }}assets/images/jobs/{{ job.image }}" alt="" />
+      </div>
+    {% endfor %}
   </div>
 </section>
+{% endif %}
 
 <section class="h-section__dontworry">
   <h1 class="hero__text">¿No encuentras tu vacante ideal? ¡No te preocupes!</h1>
