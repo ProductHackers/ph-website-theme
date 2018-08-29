@@ -25,6 +25,7 @@ layout: default
   <h1 class="hero__text">{{ site.data.unete.section_hiring.hero_text }}</h1>
   <div class="hiring__card">
     {% for job in site.data.unete.section_hiring.available_jobs %}
+    <a href="{{ site.baseurl }}{{ job.link }}">
       <div class="job">
         <div class="overlay">
           <p class="name">{{ job.name }}</p>
@@ -32,6 +33,7 @@ layout: default
         </div>
         <img src="{{ site.baseurl }}assets/images/jobs/{{ job.image }}" alt="" />
       </div>
+    </a>
     {% endfor %}
   </div>
 </section>

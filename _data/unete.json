@@ -13,35 +13,43 @@
     "available_jobs": [
       {
         "name": "Product Manager",
-        "image": "home-cover.jpg"
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
       },
       {
         "name": "Product Manager",
-        "image": "home-cover.jpg"
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
       },
       {
         "name": "Product Manager",
-        "image": "home-cover.jpg"
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
       },
       {
         "name": "Product Manager",
-        "image": "home-cover.jpg"
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
       },
       {
         "name": "Product Manager",
-        "image": "home-cover.jpg"
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
       },
       {
         "name": "Product Manager",
-        "image": "home-cover.jpg"
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
       },
       {
         "name": "Product Manager",
-        "image": "home-cover.jpg"
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
       },
       {
         "name": "Product Manager",
-        "image": "home-cover.jpg"
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
       }
     ]
   },
