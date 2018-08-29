@@ -44,5 +44,10 @@
         "image": "home-cover.jpg"
       }
     ]
+  },
+  "section_dontworry": {
+    "hero_text": "¿Ninguna te encaja? ¡No te preocupes!",
+    "text": "Estamos creciendo mucho y necesitamos tener a gente top en el radar. Siéntete libre de enviarnos tu CV a",
+    "contact_email": "info@producthackers.es"
   }
 }
