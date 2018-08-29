@@ -14,7 +14,7 @@
         <a href="#">blog</a>
       </div>
       <div class="header__link contact">
-        <a href="#">contacto</a>
+        <a href="{{ site.baseurl }}{% link contacto.md %}">contacto</a>
       </div>
       <div id="menu-button" class="header__menu menu-wrapper">
         <div id="hamburger-menu" class="hamburger-menu">
@@ -23,7 +23,6 @@
         </div>	  
       </div>
     </div>
+    {% include menu.html %}
   </div>
 </header>
-
-{% include menu.html %}

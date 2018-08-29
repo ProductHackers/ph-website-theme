@@ -7,21 +7,16 @@
     accordionClickable.forEach(function(item) {
       item.addEventListener('click', function(e) {
         accordionClickable.forEach(function(acc) {
-          if (acc !== item) acc.parentNode.classList.remove('expand');
-        });
-
-        panels.forEach(function(panel) {
-          panel.style.maxHeight = null;
+          if (acc.parentNode.querySelector('.panel').style.maxHeight) {
+            acc.parentNode.classList.toggle('expand');
+            acc.parentNode.querySelector('.panel').style.maxHeight = null;
+          }
         });
 
         item.parentNode.classList.toggle('expand');
 
         var panel = item.parentNode.querySelector('.panel');
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = `${panel.scrollHeight}px`;
-        }
+        panel.style.maxHeight = `${panel.scrollHeight}px`;
 
       });
     });

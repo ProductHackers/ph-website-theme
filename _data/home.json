@@ -40,15 +40,29 @@
   },
   "section_quote": {
     "text": "“The Hacker Way is an approach to building that involves continuous improvement and iteration. Hackers believe that something can always be better, and that nothing is ever complete”",
-    "atribution": "MARK ZUCKERBERG  -  Facebook CEO"
+    "attribution": "MARK ZUCKERBERG  -  Facebook CEO"
   },
   "section_brands": [
     {
       "name": "Grupo Planeta",
       "image": "planeta.jpg"
+    },
+    {
+      "name": "La Razón",
+      "image": "la_razon.png"
+    },
+    {
+      "name": "Movistar Plus",
+      "image": "movistar_plus.png"
+    },
+    {
+      "name": "Cruz Roja Española",
+      "image": "cruzroja.png"
     }
   ],
   "section_contact": {
-
+    "contact_text": "Si quieres contactar o enviarnos tu cv puedes hacerlo en este email",
+    "contact_email": "info@producthackers.es",
+    "contact_rrss_text": "Si quieres saber más sobre nosotros puedes seguir nuestra actividad en redes sociales y en nuestro blog"
   }
 }

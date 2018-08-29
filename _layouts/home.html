@@ -35,36 +35,44 @@ layout: default
   {% endfor %}
 </section>
 
+<section class="h-section__team">
+  <h2>Equipo</h2>
+  <div class="team__wrapper">
+    {% for mate in site.data.team.team %}
+      <div class="m8">
+        <div class="overlay">
+          <p class="name">{{ mate.name }}</p>
+          <p class="job">{{ mate.job }}</p>
+        </div>
+        <img src="{{ site.baseurl }}assets/images/team/{{ mate.image }}" alt="{{ mate.name }}" />
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
 <section class="h-section__quote">
   <div class="quote__paragraph">
-    <p>“El camino del Hacker es un acercamiento al desarrollo que conlleva la mejora e iteración continuas. 
-        Los Hackers creemos que todo se puede mejorar, y que este proceso nunca termina”.</p>
+    <p>{{ site.data.home.section_quote.text }}</p>
+    <p class="attribution">{{ site.data.home.section_quote.attribution }}</p>
   </div>
 </section>
 
 <section class="h-section__brands">
-  <div class="brand"></div>
-  <div class="brand"></div>
-  <div class="brand"></div>
-  <div class="brand"></div>
-  <div class="brand"></div>
-  <div class="brand"></div>
-  <div class="brand"></div>
-  <div class="brand"></div>
-  <div class="brand"></div>
-  <div class="brand"></div>
-  <div class="brand"></div>
+  {% for brand in site.data.home.section_brands %}
+    <div class="brand">
+      <img src="{{ "/assets/images/brands/" | append: brand.image | relative_url }}" alt="{{ brand.name }}" />
+    </div>
+  {% endfor %}
 </section>
 
 <section class="h-section__contact">
   <div class="contact__info">
-    <p>
-        Si quieres contactar o enviarnos tu cv puedes hacerlo en este email
-        <h2>info@producthackers.es</h2>
+    <p>{{ site.data.home.section_contact.contact_text }}
+        <h2>{{ site.data.home.section_contact.contact_email }}</h2>
     </p>
     <br />
     <br />
-    <p>Si quieres saber más sobre nosotros puedes seguir nuestra actividad en redes sociales y en nuestro blog</p>
+    <p>{{ site.data.home.section_contact.contact_rrss_text }}</p>
     <p class="contact__social">
       <span>blog</span>
       <img src={{ site.images.social.facebook_logo | relative_url }} />

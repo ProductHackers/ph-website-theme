@@ -1,3 +1,64 @@
 {
-  
+  "team": [
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Carles Puigdemont",
+      "job": "Colonizador",
+      "image": "dummy.jpg"
+    }
+  ]
 }
