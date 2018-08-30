@@ -5,9 +5,10 @@ layout: default
 
 <script>
   window.addEventListener('load', function() {
+    document.querySelector('body').classList.add('contact');
     var interval = setInterval(function() {
       if ((document.getElementById('Capa_2'))) {
-        setNavbarScrolled();
+        fixNavbarScrolled();
         clearInterval(interval);
       }
     }, 100);
@@ -15,7 +16,7 @@ layout: default
 </script>
 
 <h1 class="contact-hero__text">{{ site.data.contacto.section_contact.hero_text }}</h1>
-<section class="h-section__contact">
+<section class="h-section__contact contact__page">
   <div class="contact__info">
     <p>{{ site.data.home.section_contact.contact_text }}
         <h2>{{ site.data.home.section_contact.contact_email }}</h2>
@@ -25,10 +26,10 @@ layout: default
     <p>{{ site.data.home.section_contact.contact_rrss_text }}</p>
     <p class="contact__social">
       <span>blog</span>
-      <img src={{ site.images.social.facebook_logo | relative_url }} />
-      <img src={{ site.images.social.twitter_logo | relative_url }} />
-      <img src={{ site.images.social.youtube_logo | relative_url }} />
-      <img src={{ site.images.social.linkedin_logo | relative_url }} />
+      <img class="inline-svg" src={{ site.images.social.facebook_logo | relative_url }} />
+      <img class="inline-svg" src={{ site.images.social.twitter_logo | relative_url }} />
+      <img class="inline-svg" src={{ site.images.social.youtube_logo | relative_url }} />
+      <img class="inline-svg" src={{ site.images.social.linkedin_logo | relative_url }} />
     </p>
   </div>
   <div class="contact__location">
