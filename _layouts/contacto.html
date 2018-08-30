@@ -18,12 +18,9 @@ layout: default
 <h1 class="contact-hero__text">{{ site.data.contacto.section_contact.hero_text }}</h1>
 <section class="h-section__contact contact__page">
   <div class="contact__info">
-    <p>{{ site.data.home.section_contact.contact_text }}
-        <h2>{{ site.data.home.section_contact.contact_email }}</h2>
-    </p>
-    <br />
-    <br />
-    <p>{{ site.data.home.section_contact.contact_rrss_text }}</p>
+    <p>{{ site.data.home.section_contact.contact_text }}</p>
+    <h2>{{ site.data.home.section_contact.contact_email }}</h2>
+    <p class="second_p">{{ site.data.home.section_contact.contact_rrss_text }}</p>
     <p class="contact__social">
       <span>blog</span>
       <img class="inline-svg" src={{ site.images.social.facebook_logo | relative_url }} />

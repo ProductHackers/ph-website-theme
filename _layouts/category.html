@@ -1,0 +1,19 @@
+---
+layout: blog_category 
+---
+
+<script>
+  window.addEventListener('load', function() {
+    document.querySelector('body').classList.add('contact');
+    var interval = setInterval(function() {
+      if ((document.getElementById('Capa_2'))) {
+        fixNavbarScrolled();
+        clearInterval(interval);
+      }
+    }, 100);
+  });
+</script>
+
+{% for post in site.categories[page.category] %}
+  {% include cards/post.html featured_image=post.featured_image featured_image_alt=post.title post_title=post.title post_category=post.category post_date=post.date post_author=post.author post_excerpt=post.excerpt post_link=post.url  %}
+{% endfor %}

@@ -8,3 +8,5 @@ images:
     twitter_logo: assets/images/social/twitter-logo.svg
   menu: assets/images/menu.svg
   home_cover: assets/images/home-cover.jpg
+
+excerpt_separator: <!-- more -->

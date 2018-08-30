@@ -13,6 +13,8 @@ body {
   margin: 0;
   background-color: #D8D8D8;
   transition: background-color 0.3s ease-out;
+  min-height: 100vh;
+  display: grid;
 
   &.noScroll {
     width: 100%;
@@ -24,6 +26,15 @@ body {
   &.headerScroll {
     background-color: white;
   }
+
+  .page-wrapper {
+    main.page-content {
+      padding-top: 105px;
+      min-height: calc(100% - 94px);
+      // display: grid;
+      // grid-template-rows: auto min-content;
+    }
+  }
 }
 
 a {
@@ -33,6 +44,26 @@ a {
 
 ul, menu, dir {
   margin: 0;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    .page-wrapper {
+      main.page-content {
+        min-height: calc(100% - 80px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    .page-wrapper {
+      main.page-content {
+        padding-top: 54px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 230px) {

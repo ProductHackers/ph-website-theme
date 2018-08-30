@@ -384,6 +384,10 @@ section.h-section__contact {
         }
 
         &.expand {
+          h2 {
+            background-image: url('../images/minus_icon.svg');
+          }
+
           .panel {
             display: block;
             max-height: 100%;
