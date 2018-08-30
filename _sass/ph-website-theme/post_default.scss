@@ -25,11 +25,10 @@ body > .page-wrapper > main.page-content.post-default {
 
   section.post__info {
     display: grid;
-    grid-template-columns: 100%;
     grid-template-rows: min-content min-content;
     padding-top: 100px;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: calc(50% - 360px);
+    padding-right: calc(50% - 360px);
     padding-bottom: 58px;
 
     h1 {
@@ -37,7 +36,6 @@ body > .page-wrapper > main.page-content.post-default {
       line-height: 50px;
       font-weight: 800;
       margin: 0;
-      padding-right: 177px;
     }
 
     .extra__info {
@@ -76,8 +74,8 @@ body > .page-wrapper > main.page-content.post-default {
   }
 
   section.post__content {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: calc(50% - 360px);
+    padding-right: calc(50% - 360px);
     padding-bottom: 150px;
     font-size: 16px;
     line-height: 28px;
@@ -99,9 +97,54 @@ body > .page-wrapper > main.page-content.post-default {
       }
     }
   }
+
+  section.social {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    padding-bottom: 150px;
+
+    span {
+      grid-column-end: span 4;
+      justify-self: center;
+    }
+
+    a {
+      grid-row-start: 2;
+      img, svg {
+        justify-self: center;
+        width: 16px;
+        height: 16px;
+
+        g > path {
+          fill: black;
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 850px) {
+  .post-content {
+    section.post__info {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      h1 {
+        padding-right: 0;
+      }
+    }
+    section.post__content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
   .post-content {
     section.featured__image {
       img {
@@ -129,6 +172,8 @@ body > .page-wrapper > main.page-content.post-default {
     section.post__content {
       padding-left: 20px;
       padding-right: 20px;
+      padding-bottom: 70px;
+      font-size: 14px;
 
       .iframe__container {
 
@@ -137,6 +182,11 @@ body > .page-wrapper > main.page-content.post-default {
           height: 200px;
         }
       }
+    }
+
+    section.social {
+      padding-bottom: 100px;
+      grid-row-gap: 20px;
     }
   }
 }

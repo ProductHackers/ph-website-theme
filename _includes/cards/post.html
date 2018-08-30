@@ -1,5 +1,7 @@
 <div class="post__card">
-  <img class="featured" src="/assets/images/posts/{{ include.featured_image }}" alt="{{ include.featured_image_alt }}" />
+  {% if include.featured_image %}
+    <img class="featured" src="/assets/images/posts/{{ include.featured_image }}" alt="{{ include.featured_image_alt }}" />
+  {% endif %}
   <h2 class="post__title">{{ include.post_title }}</h2>
   <div class="extra__info">
     <a href="/category/{{ include.post_category_url }}"><span class="post__category">{{ include.post_category }}</span></a>
