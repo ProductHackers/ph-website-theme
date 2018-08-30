@@ -31,8 +31,6 @@ body {
     main.page-content {
       padding-top: 105px;
       min-height: calc(100% - 94px);
-      // display: grid;
-      // grid-template-rows: auto min-content;
     }
   }
 }
@@ -56,7 +54,7 @@ ul, menu, dir {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 420px) {
   body {
     .page-wrapper {
       main.page-content {

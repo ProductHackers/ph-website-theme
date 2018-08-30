@@ -15,5 +15,5 @@ layout: blog_category
 </script>
 
 {% for post in site.categories[page.category] %}
-  {% include cards/post.html featured_image=post.featured_image featured_image_alt=post.title post_title=post.title post_category=post.category post_date=post.date post_author=post.author post_excerpt=post.excerpt post_link=post.url  %}
+  {% include cards/post.html featured_image=post.featured_image_thumbnail featured_image_alt=post.title post_title=post.title post_category=post.category post_category_url=post.category_url post_date=post.date post_author=post.author post_excerpt=post.excerpt post_link=post.url  %}
 {% endfor %}

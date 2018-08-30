@@ -1,0 +1,142 @@
+body.post-default {
+  background-color: white;
+}
+
+body > .page-wrapper > main.page-content.post-default {
+  padding-top: 0;
+}
+
+.post-content {
+  p {
+    margin: 0;
+  }
+
+  section.featured__image {
+    width: 100%;
+    height: auto;
+
+    img {
+      width: 100%;
+      max-height: 200px;
+      object-position: 50% 50%;
+      object-fit: cover;
+    }
+  }
+
+  section.post__info {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content;
+    padding-top: 100px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 58px;
+
+    h1 {
+      font-size: 50px;
+      line-height: 50px;
+      font-weight: 800;
+      margin: 0;
+      padding-right: 177px;
+    }
+
+    .extra__info {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: max-content max-content max-content;
+      grid-row-gap: 8px;
+      grid-column-gap: 12px;
+      padding-top: 60px;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 800;
+  
+      .post__category {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        color: $brand-color;
+      }
+      .date {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        color: #2E2E2E;
+        opacity: 0.71;
+      }
+      .separator {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        color: #2E2E2E;
+      }
+      .author {
+        grid-row-start: 2;
+        grid-column-start: 3;
+        color: #2E2E2E;
+      }
+    }
+  }
+
+  section.post__content {
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 150px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+
+    p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .iframe__container {
+      display: grid;
+      width: 100%;
+      justify-content: center;
+
+      iframe.youtube {
+        width: 500px;
+        height: 315px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .post-content {
+    section.featured__image {
+      img {
+        max-height: 150px;
+      }
+    }
+
+    section.post__info {
+      padding-top: 27px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 28px;
+
+      h1 {
+        font-size: 18px;
+        line-height: 22px;
+        padding-right: 0;
+      }
+
+      .extra__info {
+        padding-top: 28px;
+      }
+    }
+
+    section.post__content {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .iframe__container {
+
+        iframe.youtube {
+          width: 100%;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
