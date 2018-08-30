@@ -1,6 +1,6 @@
 .wrapper.blog__category {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
   grid-column-gap: 38px;
   grid-row-gap: 100px;
   padding-top: 80px;
