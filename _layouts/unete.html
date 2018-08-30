@@ -20,7 +20,7 @@ layout: default
   </div>
 </section>
 
-{% if site.data.unete.section_hiring.available_jobs %}
+{% if site.data.unete.section_hiring.available_jobs.size > 0 %}
 <section class="h-section__hiring">
   <h1 class="hero__text">{{ site.data.unete.section_hiring.hero_text }}</h1>
   <div class="hiring__card">
@@ -40,7 +40,11 @@ layout: default
 {% endif %}
 
 <section class="h-section__dontworry">
+  {% if site.data.unete.section_hiring.available_jobs.size > 0 %}
   <h1 class="hero__text">{{ site.data.unete.section_dontworry.hero_text }}</h1>
   <p>{{ site.data.unete.section_dontworry.text }}</p>
+  {% else %}
+  <p>{{ site.data.unete.section_dontworry.text_no_vacancies }}</p>
+  {% endif %}
   <p class="email">{{ site.data.unete.section_dontworry.contact_email }}</p>
 </section>
