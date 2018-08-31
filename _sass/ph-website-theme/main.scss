@@ -27,6 +27,14 @@ body {
     background-color: white;
   }
 
+  &.joinus {
+    .page-wrapper {
+      main.page-content {
+        padding-top: 0;
+      }
+    }
+  }
+
   .page-wrapper {
     main.page-content {
       padding-top: 105px;
