@@ -29,9 +29,9 @@ layout: default
       <div class="job">
         <div class="overlay">
           <p class="name">{{ job.name }}</p>
-          <span class="plus__icon"><img src="assets/images/plus_icon.svg" alt="plus icon" /></span>
+          <span class="plus__icon"><img src="{{ site.baseurl }}/assets/images/plus_icon.svg" alt="plus icon" /></span>
         </div>
-        <img src="{{ site.baseurl }}assets/images/jobs/{{ job.image }}" alt="" />
+        <img src="{{ site.baseurl }}/assets/images/jobs/{{ job.image }}" alt="" />
       </div>
     </a>
     {% endfor %}

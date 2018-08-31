@@ -44,7 +44,7 @@ layout: default
           <p class="name">{{ mate.name }}</p>
           <p class="job">{{ mate.job }}</p>
         </div>
-        <img src="{{ site.baseurl }}assets/images/team/{{ mate.image }}" alt="{{ mate.name }}" />
+        <img src="{{ site.baseurl }}/assets/images/team/{{ mate.image }}" alt="{{ mate.name }}" />
       </div>
     {% endfor %}
   </div>
@@ -60,7 +60,7 @@ layout: default
 <section class="h-section__brands">
   {% for brand in site.data.home.section_brands %}
     <div class="brand">
-      <img src="{{ "/assets/images/brands/" | append: brand.image | relative_url }}" alt="{{ brand.name }}" />
+      <img src="{{ site.baseurl }}{{ "/assets/images/brands/" | append: brand.image | relative_url }}" alt="{{ brand.name }}" />
     </div>
   {% endfor %}
 </section>
@@ -75,10 +75,10 @@ layout: default
     <p>{{ site.data.home.section_contact.contact_rrss_text }}</p>
     <p class="contact__social">
       <span>blog</span>
-      <a href="#"><img class="inline-svg" src="/assets/images/social/facebook-logo.svg" /></a>
-      <a href="#"><img class="inline-svg" src="/assets/images/social/twitter-logo.svg" /></a>
-      <a href="#"><img class="inline-svg" src="/assets/images/social/youtube-play-button.svg" /></a>
-      <a href="#"><img class="inline-svg" src="/assets/images/social/linkedin-logo.svg" /></a>
+      <a href="#"><img class="inline-svg" src="{{ site.baseurl }}/assets/images/social/facebook-logo.svg" /></a>
+      <a href="#"><img class="inline-svg" src="{{ site.baseurl }}/assets/images/social/twitter-logo.svg" /></a>
+      <a href="#"><img class="inline-svg" src="{{ site.baseurl }}/assets/images/social/youtube-play-button.svg" /></a>
+      <a href="#"><img class="inline-svg" src="{{ site.baseurl }}/assets/images/social/linkedin-logo.svg" /></a>
     </p>
   </div>
   <div class="contact__location">
