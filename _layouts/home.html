@@ -60,7 +60,7 @@ layout: default
 <section class="h-section__brands">
   {% for brand in site.data.home.section_brands %}
     <div class="brand">
-      <img src="{{ site.baseurl }}{{ "/assets/images/brands/" | append: brand.image | relative_url }}" alt="{{ brand.name }}" />
+      <img src="{{ site.baseurl }}{{ "/assets/images/brands/" | append: brand.image }}" alt="{{ brand.name }}" />
     </div>
   {% endfor %}
 </section>
