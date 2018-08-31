@@ -7,7 +7,8 @@ layout: default
   <div class="bottom__text">
     <h1>{{ site.data.home.section_intro.cta_text }}</h1>
     <div class="bottom__cta">
-      {% include buttons/cta.html text="contáctanos" link="/contacto.html" %}
+      {% assign url = site.baseurl | append: '/contacto.html' %}
+      {% include buttons/cta.html text="contáctanos" link=url %}
    </div>
   </div>
 </section>
