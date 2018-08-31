@@ -8,6 +8,7 @@ header {
   padding-left: 100px;
   padding-right: 100px;
   z-index: 1;
+  transition: all 0.3s ease-out;
 
   &.scroll {
     background-color: white;
