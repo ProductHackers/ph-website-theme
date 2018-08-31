@@ -270,7 +270,12 @@ section.h-section__contact {
       grid-template-columns: repeat(auto-fit, minmax(36px, min-content));
       justify-content: center;
     }
-    .contact__social > img {
+    .contact__social > a > img {
+      justify-self: center;
+      width: 16px;
+      height: 16px;
+    }
+    .contact__social > a > svg {
       justify-self: center;
       width: 16px;
       height: 16px;
