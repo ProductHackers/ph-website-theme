@@ -1,0 +1,50 @@
+---
+title: Product Hackers - Únete
+layout: default
+---
+
+<section class="h-section__join">
+  <div class="intro__text">
+    <h1 class="hero__text">{{ site.data.unete.section_join.hero_text }}</h1>
+    <p>{{ site.data.unete.section_join.text }}</p>
+  </div>
+</section>
+
+<section class="h-section__about">
+  <div class="big__text">
+    <h1 class="hero__text">{{ site.data.unete.section_about.hero_text }}</h1>
+  </div>
+  <div class="about__text">
+    <p class="first">{{ site.data.unete.section_about.first_p }}</p>
+    <p class="second">{{ site.data.unete.section_about.second_p }}</p>
+  </div>
+</section>
+
+{% if site.data.unete.section_hiring.available_jobs.size > 0 %}
+<section class="h-section__hiring">
+  <h1 class="hero__text">{{ site.data.unete.section_hiring.hero_text }}</h1>
+  <div class="hiring__card">
+    {% for job in site.data.unete.section_hiring.available_jobs %}
+    <a href="{{ site.baseurl }}{{ job.link }}">
+      <div class="job">
+        <div class="overlay">
+          <p class="name">{{ job.name }}</p>
+          <span class="plus__icon"><img src="assets/images/plus_icon.svg" alt="plus icon" /></span>
+        </div>
+        <img src="{{ site.baseurl }}assets/images/jobs/{{ job.image }}" alt="" />
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="h-section__dontworry">
+  {% if site.data.unete.section_hiring.available_jobs.size > 0 %}
+  <h1 class="hero__text">{{ site.data.unete.section_dontworry.hero_text }}</h1>
+  <p>{{ site.data.unete.section_dontworry.text }}</p>
+  {% else %}
+  <p>{{ site.data.unete.section_dontworry.text_no_vacancies }}</p>
+  {% endif %}
+  <p class="email">{{ site.data.unete.section_dontworry.contact_email }}</p>
+</section>

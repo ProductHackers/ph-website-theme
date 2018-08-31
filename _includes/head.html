@@ -1,11 +1,25 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,800,900" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-  {%- if jekyll.environment != 'production' -%}
-    <script src="http://127.0.0.1:35729/livereload.js"></script>
-  {%- endif -%}
+  {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+    <link rel="stylesheet" href="{{ "/assets/css/" | append: stylesheet | append: '.css' | relative_url }}">
+    {% endfor %}
+  {% endif %}
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script src="{{ "/assets/js/vendor/inlineSVG/inlineSVG.min.js" | relative_url }}"></script>
+  <script async src="{{ "/assets/js/navbar.js" | relative_url }}"></script>
+  <script async src="{{ "/assets/js/menu.js" | relative_url }}"></script>
+  {% if page.hasAccordion %}
+  <script async src="{{ "/assets/js/accordion.js" | relative_url }}"></script>
+  {% endif %}
+  {% if page.hasTeam %}
+  <script async src="{{ "/assets/js/vendor/scrollMonitor/scrollMonitor.min.js" | relative_url }}"></script>
+  <script async src="{{ "/assets/js/team_mobile_reveal.js" | relative_url }}"></script>
+  {% endif %}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}

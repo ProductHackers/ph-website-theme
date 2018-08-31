@@ -1,0 +1,64 @@
+{
+  "team": [
+    {
+      "name": "Luis Díaz",
+      "job": "CEO & founder",
+      "image": "luis.jpg"
+    },
+    {
+      "name": "Jorge García",
+      "job": "CTO & founder",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Raquel Carmona",
+      "job": "Product designer",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Juan Escalante",
+      "job": "Operations",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "José Serrano",
+      "job": "Product owner",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Andrés Fulla",
+      "job": "Front-end developer",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "David Cervantes",
+      "job": "Back-end developer",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Juan Angosto",
+      "job": "Back-end developer",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Miguel Martín-Nieto",
+      "job": "iOS developer",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "José Rivera",
+      "job": "Back-end developer",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Beatriz Pañeda",
+      "job": "Content creator & paid social",
+      "image": "dummy.jpg"
+    },
+    {
+      "name": "Lucía Morollón",
+      "job": "Content creator",
+      "image": "dummy.jpg"
+    }
+  ]
+}

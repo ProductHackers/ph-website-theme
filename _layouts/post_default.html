@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="noScroll post-default">
+    <div class="page-wrapper">
+      {%- include navbar.html -%}
+      <main class="page-content post-default" aria-label="Content">
+        <div class="wrapper">
+          <div class="post-content">
+            <section class="featured__image">
+              <img src="/assets/images/posts/{{ page.featured_image }}" alt="" />
+            </section>
+            <section class="post__info">
+              <h1>{{ page.title }}</h1>
+              <div class="extra__info">
+                <a href="/category/{{ page.category_url }}"><span class="post__category">{{ page.category }}</span></a>
+                <span class="date">{{ page.date | date_to_long_string }}</span>
+                <span class="separator">-</span>
+                <span class="author">{{ page.author }}</span>
+              </div>
+            </section>
+            <section class="post__content">
+              {{ content }}
+            </section>
+            <section class="social">
+              <span>Compartir</span>
+              <a href="#"><img class="inline-svg" src="/assets/images/social/facebook-logo.svg" /></a>
+              <a href="#"><img class="inline-svg" src="/assets/images/social/twitter-logo.svg" /></a>
+              <a href="#"><img class="inline-svg" src="/assets/images/social/whatsapp-logo.svg" /></a>
+              <a href="#"><img class="inline-svg" src="/assets/images/social/linkedin-logo.svg" /></a>
+            </section>
+          </div>
+        </div>
+      </main>
+      {% include footer.html %}
+    </div>
+
+    {% include prevent-scroll-script.html %}
+  </body>
+</html>

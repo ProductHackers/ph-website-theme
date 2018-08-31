@@ -1,0 +1,14 @@
+<div class="post__card">
+  {% if include.featured_image %}
+    <img class="featured" src="/assets/images/posts/{{ include.featured_image }}" alt="{{ include.featured_image_alt }}" />
+  {% endif %}
+  <h2 class="post__title">{{ include.post_title }}</h2>
+  <div class="extra__info">
+    <a href="/category/{{ include.post_category_url }}"><span class="post__category">{{ include.post_category }}</span></a>
+    <span class="date">{{ include.post_date | date_to_long_string }}</span>
+    <span class="separator">-</span>
+    <span class="author">{{ include.post_author }}</span>
+  </div>
+  {{ include.post_excerpt }}
+  <a class="post__link" href="{{ include.post_link }}"><span>Ver post</span></a>
+</div>

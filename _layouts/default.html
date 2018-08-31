@@ -3,16 +3,17 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="noScroll">
+    <div class="page-wrapper">
+      {%- include navbar.html -%}
+      <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </main>
+      {% include footer.html %}
+    </div>
 
-    {%- include navbar.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
-
+    {% include prevent-scroll-script.html %}
   </body>
-
 </html>

@@ -1,8 +1,7 @@
 @charset "utf-8";
 
 // Define defaults for each variable.
-
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -10,13 +9,11 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #4A4A4A !default;
-$background-color: #fdfdfd !default;
+$text-color-negative:       #4A4A4A !default;
 $brand-color:      #F92300 !default;
+$menu-background: #4A4A4A !default;
 
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-background-dark: #9B9B9B !default;
 
 $table-text-align: left !default;
 
@@ -33,19 +30,18 @@ $on-laptop:        800px !default;
 //     padding-left: $spacing-unit / 2;
 //   }
 // }
-@mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
-}
-
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
-}
 
 // Import partials.
 @import
 "ph-website-theme/main",
 "ph-website-theme/home",
-"ph-website-theme/navbar"
+"ph-website-theme/unete",
+"ph-website-theme/contacto",
+"ph-website-theme/category",
+"ph-website-theme/post_default",
+"ph-website-theme/navbar",
+"ph-website-theme/footer",
+"ph-website-theme/menu",
+"ph-website-theme/buttons/cta",
+"ph-website-theme/cards/post"
 ;

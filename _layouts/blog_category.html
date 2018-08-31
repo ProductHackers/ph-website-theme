@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="noScroll">
+    <div class="page-wrapper">
+      {%- include navbar.html -%}
+      <main class="page-content" aria-label="Content">
+        <div class="wrapper blog__category">
+          {{ content }}
+        </div>
+      </main>
+      {% include footer.html %}
+    </div>
+
+    {% include prevent-scroll-script.html %}
+  </body>
+</html>

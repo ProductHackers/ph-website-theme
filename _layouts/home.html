@@ -2,6 +2,90 @@
 title: Product Hackers
 layout: default
 ---
-<section class="h-section__intro">
 
+<section class="h-section__intro">
+  <div class="bottom__text">
+    <h1>{{ site.data.home.section_intro.cta_text }}</h1>
+    <div class="bottom__cta">
+      {% include buttons/cta.html text="contáctanos" link="/contacto.html" %}
+   </div>
+  </div>
+</section>
+
+<section class="h-section__context">
+  <div class="context__paragraph intro">
+    <h2>{{ site.data.home.section_context.who.title }}</h2>
+    <p>{{ site.data.home.section_context.who.text }}</p>
+  </div>
+  {% for block in site.data.home.section_context.blocks %}
+    {% assign modulo = forloop.index | modulo: 2 %}
+    {% if modulo == 1 %}
+      {% assign style = 'left' %}
+    {% elsif modulo == 0 %}
+      {% assign style = 'right' %}
+    {% endif %}
+    <div class="{{ "context__paragraph" | append: " " | append: style }}">
+      <h2 class="highlighted"><span class="text">{{ block.title }}</span></h2>
+      <div class="panel">
+        {% for paragraph in block.text %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="h-section__team">
+  <h2>Equipo</h2>
+  <div class="team__wrapper">
+    {% for mate in site.data.team.team %}
+      <div class="m8">
+        <div class="overlay">
+          <p class="name">{{ mate.name }}</p>
+          <p class="job">{{ mate.job }}</p>
+        </div>
+        <img src="{{ site.baseurl }}assets/images/team/{{ mate.image }}" alt="{{ mate.name }}" />
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="h-section__quote">
+  <div class="quote__paragraph">
+    <p>{{ site.data.home.section_quote.text }}</p>
+    <p class="attribution">{{ site.data.home.section_quote.attribution }}</p>
+  </div>
+</section>
+
+<section class="h-section__brands">
+  {% for brand in site.data.home.section_brands %}
+    <div class="brand">
+      <img src="{{ "/assets/images/brands/" | append: brand.image | relative_url }}" alt="{{ brand.name }}" />
+    </div>
+  {% endfor %}
+</section>
+
+<section class="h-section__contact">
+  <div class="contact__info">
+    <p>{{ site.data.home.section_contact.contact_text }}
+        <h2>{{ site.data.home.section_contact.contact_email }}</h2>
+    </p>
+    <br />
+    <br />
+    <p>{{ site.data.home.section_contact.contact_rrss_text }}</p>
+    <p class="contact__social">
+      <span>blog</span>
+      <a href="#"><img class="inline-svg" src="/assets/images/social/facebook-logo.svg" /></a>
+      <a href="#"><img class="inline-svg" src="/assets/images/social/twitter-logo.svg" /></a>
+      <a href="#"><img class="inline-svg" src="/assets/images/social/youtube-play-button.svg" /></a>
+      <a href="#"><img class="inline-svg" src="/assets/images/social/linkedin-logo.svg" /></a>
+    </p>
+  </div>
+  <div class="contact__location">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=product%20hackers&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+      </div>
+  </div>
 </section>

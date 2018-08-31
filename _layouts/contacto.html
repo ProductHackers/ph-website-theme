@@ -1,0 +1,39 @@
+---
+title: Product Hackers - contacto
+layout: default
+---
+
+<script>
+  window.addEventListener('load', function() {
+    document.querySelector('body').classList.add('contact');
+    var interval = setInterval(function() {
+      if ((document.getElementById('Capa_2'))) {
+        fixNavbarScrolled();
+        clearInterval(interval);
+      }
+    }, 100);
+  });
+</script>
+
+<h1 class="contact-hero__text">{{ site.data.contacto.section_contact.hero_text }}</h1>
+<section class="h-section__contact contact__page">
+  <div class="contact__info">
+    <p>{{ site.data.home.section_contact.contact_text }}</p>
+    <h2>{{ site.data.home.section_contact.contact_email }}</h2>
+    <p class="second_p">{{ site.data.home.section_contact.contact_rrss_text }}</p>
+    <p class="contact__social">
+      <span>blog</span>
+      <a href="#"><img class="inline-svg" src="/assets/images/social/facebook-logo.svg" /></a>
+      <a href="#"><img class="inline-svg" src="/assets/images/social/twitter-logo.svg" /></a>
+      <a href="#"><img class="inline-svg" src="/assets/images/social/youtube-play-button.svg" /></a>
+      <a href="#"><img class="inline-svg" src="/assets/images/social/linkedin-logo.svg" /></a>
+    </p>
+  </div>
+  <div class="contact__location">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=product%20hackers&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+      </div>
+  </div>
+</section>

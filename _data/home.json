@@ -1,0 +1,76 @@
+{
+  "section_intro": {
+    "cta_text": "Impulsamos negocios creando y refinando productos que cautivan"
+  },
+  "section_context": {
+    "who": {
+      "title": "Todo negocio merece un gran producto",
+      "text": "<b>Somos Product Hackers,</b> un grupo de profesionales digitales especializados en producto y estrategia digital. Trabajamos con empresas referentes, así como empresas tecnológicas de nueva creación, favoreciendo una disrupción suave e innovación sostenida a través de la creación de productos y servicios que la gente quiere usar. Porque todo negocio merece un gran producto."
+    },
+    "blocks": [
+      {
+        "title": "¿Por qué lo hacemos?",
+        "text": [
+          "Hemos experimentado demasiados productos mediocres, y vemos como la mayoría de negocios mueren debido a una mala ejecución de su producto o servicio.",
+          "Somos mejoristas del producto digital, y gracias a nuestra libertad operativa hacemos proyectos que funcionan."
+        ]
+      },
+      {
+        "title": "¿Para qué lo hacemos?",
+        "text": [
+          "Deseamos que haya más productos que la gente quiera usar, por eso ayudamos a nuestros clientes a no perderse entre tanta disrupción y alternativas de innovación.",
+          "Redefinimos y perfeccionamos de forma continua nuestra manera de ejecutar proyectos con base tecnológica, para mejorar las probabilidades de éxito de cualquier tipo de negocio."
+        ]
+      },
+      {
+        "title": "así somos",
+        "text": [
+          "Analizamos la situación de negocio, diseñamos una solución estratégica, y aplicamos una ejecución excelente.",
+          "Sin dogmas, ni bolas de cristal. Sólo nos mueve nuestro talento con valores y las ganas de innovar."
+        ]
+      },
+      {
+        "title": "a lo que venimos",
+        "text": [
+          "Aplicamos disrupción e innovación suaves para favorecer la estabilidad y la visión estratégica de nuestros clientes, manteniendo la obsesión por fascinar al usuario final.",
+          "Soñamos con poder compartir un ecosistema empresarial e innovador español que esté a la altura de los mejores del mundo."
+        ]
+      }
+    ]
+  },
+  "section_quote": {
+    "text": "“The Hacker Way is an approach to building that involves continuous improvement and iteration. Hackers believe that something can always be better, and that nothing is ever complete”",
+    "attribution": "MARK ZUCKERBERG  -  Facebook CEO"
+  },
+  "section_brands": [
+    {
+      "name": "Grupo Planeta",
+      "image": "planeta.jpg"
+    },
+    {
+      "name": "Dive",
+      "image": "dive.png"
+    },
+    {
+      "name": "La Razón",
+      "image": "la_razon.png"
+    },
+    {
+      "name": "Movistar Plus",
+      "image": "movistar_plus.png"
+    },
+    {
+      "name": "Cruz Roja Española",
+      "image": "cruzroja.png"
+    },
+    {
+      "name": "G+J",
+      "image": "gj.jpg"
+    }
+  ],
+  "section_contact": {
+    "contact_text": "Si quieres que hablemos o enviarnos tu cv puedes hacerlo en este email",
+    "contact_email": "info@producthackers.es",
+    "contact_rrss_text": "Para saber más sobre nosotros puedes seguir nuestra actividad en redes sociales y en nuestro blog"
+  }
+}

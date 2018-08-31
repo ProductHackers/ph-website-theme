@@ -1,0 +1,62 @@
+{
+  "section_join": {
+    "hero_text": "¿Eres un Product Hacker?",
+    "text": "Somos Apasionados. Brainstormers. Creativos. Disruptivos. Empiristas. Facilitadores. Game-changers Geeks. Hackers. Inconformistas. Jedis. Kilates de talento. Libres. Mejoristas. Nativos digitales. Operativos. Provocadores. Question-makers. Resilientes. Soñadores. Transparentes. UX/UI-lovers. Value-dealers. What about You?"
+  },
+  "section_about": {
+    "hero_text": "Una cuestión de valores",
+    "first_p": "Nos orientamos a la solución y a la entrega de valor. Decimos lo que pensamos aunque nos cueste un proyecto, cobrar una factura o nuestro puesto de trabajo. Somos respetuosos y educados, y no llevamos corbata. Aprendemos de cada uno de nuestros clientes. Estamos obsesionados: con las métricas, con nuestro trabajo, con los retos y con disfrutar de la vida.",
+    "second_p": "Creemos en el liderazgo a través del ejemplo y la implicación personal. Decidimos sin miedo a fracasar, pero medimos de manera precisa el impacto de nuestras decisiones Para poder celebrar y aprender, nos responsabilizamos de nuestros aciertos y errores por igual. Disfrutamos del trabajo, incluso en los momentos difíciles."
+  },
+  "section_hiring": {
+    "hero_text": "Únete al equipo",
+    "available_jobs": [
+      {
+        "name": "Product Manager",
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
+      },
+      {
+        "name": "Product Manager",
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
+      },
+      {
+        "name": "Product Manager",
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
+      },
+      {
+        "name": "Product Manager",
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
+      },
+      {
+        "name": "Product Manager",
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
+      },
+      {
+        "name": "Product Manager",
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
+      },
+      {
+        "name": "Product Manager",
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
+      },
+      {
+        "name": "Product Manager",
+        "image": "home-cover.jpg",
+        "link": "nozing.html"
+      }
+    ]
+  },
+  "section_dontworry": {
+    "hero_text": "¿Ninguna te encaja? ¡No te preocupes!",
+    "text": "Estamos creciendo mucho y necesitamos tener a gente top en el radar. Siéntete libre de enviarnos tu CV a",
+    "text_no_vacancies": "Ahora mismo no estamos buscando ningún perfil en concreto, pero siéntete libre de enviarnos tu CV a",
+    "contact_email": "info@producthackers.es"
+  }
+}

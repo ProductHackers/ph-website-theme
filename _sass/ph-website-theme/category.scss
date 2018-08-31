@@ -1,0 +1,21 @@
+.wrapper.blog__category {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+  grid-column-gap: 38px;
+  grid-row-gap: 100px;
+  padding-top: 80px;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-bottom: 160px;
+  justify-content: center;
+  justify-items: center;
+}
+
+@media screen and (max-width: 920px) {
+  .wrapper.blog__category {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-row-gap: 80px;
+  }
+}
