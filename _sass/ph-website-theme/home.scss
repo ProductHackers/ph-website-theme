@@ -260,15 +260,16 @@ section.h-section__contact {
       font-size: 16px;
       font-weight: 700;
     }
-    span {
-      text-transform: uppercase;
-      padding-right: 5px;
-    }
     .contact__social {
       padding-top: 25px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(36px, min-content));
       justify-content: center;
+      a {
+        color: white;
+        text-transform: uppercase;
+        padding-right: 5px;
+      }
     }
     .contact__social > a > img {
       justify-self: center;
