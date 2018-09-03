@@ -179,11 +179,19 @@ section.h-section__dontworry {
   section.h-section__join {
     grid-template-columns: 70%;
   }
+  section.h-section__about > .about__text {
+    padding-left: 100px;
+    padding-right: 200px;
+  }
 }
 
 @media screen and (max-width: 1075px) {
   section.h-section__join {
     grid-template-columns: 80%;
+  }
+  section.h-section__about > .about__text {
+    padding-left: 75px;
+    padding-right: 175px;
   }
 }
 
@@ -195,6 +203,11 @@ section.h-section__dontworry {
       padding-left: 50px;
       padding-right: 50px;
     }
+  }
+
+  section.h-section__about > .about__text {
+    padding-left: 0px;
+    padding-right: 175px;
   }
 }
 
