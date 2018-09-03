@@ -8,6 +8,8 @@ h1.hero__text {
 section.h-section__join {
   width: 100%;
   background-color: $grey-background-dark;
+  background-image: url('../images/unete-header.jpg');
+  background-size: cover;
   display: grid;
   grid-template-columns: 60%;
 
@@ -56,8 +58,8 @@ section.h-section__about {
       font-weight: 800;
       font-size: 60px;
       line-height: 73px;
-      background-image: url(../images/grey-rectangle.png);
-      background-size: 70% 100%;
+      background-image: url(../images/unete-piece.jpg);
+      background-size: 70% auto;
       background-repeat: no-repeat;
       background-position-x: 100%;
       height: 366px;

@@ -6,6 +6,9 @@ section.h-section__intro {
   width: 100%;
   min-height: 479px;
   background-color: #D8D8D8;
+  background-image: url('../images/home-cover.jpg');
+  background-size: cover;
+  background-position-y: 58%;
   display: grid;
   grid-template-rows: 338px auto;
   align-items: center;

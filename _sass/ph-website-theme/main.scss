@@ -27,17 +27,17 @@ body {
     background-color: white;
   }
 
-  &.joinus {
+  &.contact {
     .page-wrapper {
       main.page-content {
-        padding-top: 0;
+        padding-top: 105px;
       }
     }
   }
 
   .page-wrapper {
     main.page-content {
-      padding-top: 105px;
+      padding-top: 0px;
       min-height: calc(100% - 94px);
     }
   }
