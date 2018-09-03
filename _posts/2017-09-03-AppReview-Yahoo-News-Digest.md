@@ -6,8 +6,8 @@ categories: blog appreview
 category: AppReview
 category_url: appreview
 author: Product Hackers
-featured_image: '2017/09/2017-09-03.jpg'
-featured_image_thumbnail: '2017/09/2017-09-03-thumbnail.jpg'
+featured_image: 'AppReview.png'
+featured_image_thumbnail: 'AppReview-brand-square.png'
 ---
 
 Una nueva entrega de **#AppReview**. En esta entrega, Andrés y Alex examinarán **Yahoo New Digest**.
