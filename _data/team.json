@@ -1,64 +1,54 @@
 {
   "team": [
     {
-      "name": "Luis Díaz",
-      "job": "CEO & founder",
-      "image": "luis.jpg"
-    },
-    {
-      "name": "Jorge García",
-      "job": "CTO & founder",
-      "image": "dummy.jpg"
-    },
-    {
       "name": "Raquel Carmona",
       "job": "Product designer",
-      "image": "dummy.jpg"
+      "image": "raquel_def.jpg"
     },
     {
       "name": "Juan Escalante",
       "job": "Operations",
-      "image": "dummy.jpg"
+      "image": "cucho_def.jpg"
     },
     {
       "name": "José Serrano",
       "job": "Product owner",
-      "image": "dummy.jpg"
+      "image": "pepe_def.jpg"
     },
     {
       "name": "Andrés Fulla",
       "job": "Front-end developer",
-      "image": "dummy.jpg"
+      "image": "andres_def.jpg"
     },
     {
       "name": "David Cervantes",
       "job": "Back-end developer",
-      "image": "dummy.jpg"
+      "image": "david_def.jpg"
     },
     {
       "name": "Juan Angosto",
       "job": "Back-end developer",
-      "image": "dummy.jpg"
+      "image": "juan_def.jpg"
     },
     {
       "name": "Miguel Martín-Nieto",
       "job": "iOS developer",
-      "image": "dummy.jpg"
+      "image": "miguel_def.jpg"
     },
     {
       "name": "José Rivera",
       "job": "Back-end developer",
-      "image": "dummy.jpg"
+      "image": "chema_def.jpg"
     },
     {
-      "name": "Beatriz Pañeda",
-      "job": "Content creator & paid social",
-      "image": "dummy.jpg"
+      "name": "Luis Díaz",
+      "job": "CEO & founder",
+      "image": "luis_def.jpg"
     },
     {
-      "name": "Lucía Morollón",
-      "job": "Content creator",
-      "image": "dummy.jpg"
+      "name": "Jorge García",
+      "job": "CTO & founder",
+      "image": "jorge_def.jpg"
     }
   ]
 }

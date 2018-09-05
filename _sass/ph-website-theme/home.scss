@@ -4,23 +4,22 @@ section {
 
 section.h-section__intro {
   width: 100%;
-  min-height: 479px;
+  min-height: 100vh;
   background-color: #D8D8D8;
   background-image: url('../images/home-cover.jpg');
   background-size: cover;
   background-position-y: 58%;
   display: grid;
-  grid-template-rows: 338px auto;
   align-items: center;
 
   .bottom__text {
     display: grid;
-    grid-row-start: 2;
     justify-self: end;
-    align-self: start;
+    align-self: end;
     padding-right: 110px;
     line-height: 20px;
     text-align: center;
+    margin-bottom: 100px;
 
     h1 {
       color: white;
@@ -36,12 +35,11 @@ section.h-section__intro {
   }
 
   @media screen and (max-width: 450px) {
-    min-height: 320px;
-    grid-template-rows: 189px auto;
     .bottom__text {
       justify-self: center;
       padding-left: 17px;
       padding-right: 17px;
+      margin-bottom: 50px;
       h1 {
         margin: 0;
       }
@@ -190,6 +188,7 @@ section.h-section__team {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center top;
       }
     }
   }
