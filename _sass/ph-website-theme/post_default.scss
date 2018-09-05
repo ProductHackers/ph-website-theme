@@ -96,6 +96,10 @@ body > .page-wrapper > main.page-content.post-default {
     p {
       margin-top: 20px;
       margin-bottom: 20px;
+
+      img {
+        max-width: 100%;
+      }
     }
 
     .iframe__container {
