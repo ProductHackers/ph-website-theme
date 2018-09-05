@@ -21,6 +21,9 @@
   <script async src="{{ "/assets/js/vendor/scrollMonitor/scrollMonitor.min.js" | relative_url }}"></script>
   <script async src="{{ "/assets/js/team_mobile_reveal.js" | relative_url }}"></script>
   {% endif %}
+  {% if page.isHome %}
+  <script async src="{{ "/assets/js/home_video.js" | relative_url }}"></script>
+  {% endif %}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}

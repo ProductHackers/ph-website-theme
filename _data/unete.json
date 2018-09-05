@@ -12,44 +12,9 @@
     "hero_text": "Únete al equipo",
     "available_jobs": [
       {
-        "name": "Product Manager",
+        "name": "Maquetador",
         "image": "home-cover.jpg",
-        "link": "nozing.html"
-      },
-      {
-        "name": "Product Manager",
-        "image": "home-cover.jpg",
-        "link": "nozing.html"
-      },
-      {
-        "name": "Product Manager",
-        "image": "home-cover.jpg",
-        "link": "nozing.html"
-      },
-      {
-        "name": "Product Manager",
-        "image": "home-cover.jpg",
-        "link": "nozing.html"
-      },
-      {
-        "name": "Product Manager",
-        "image": "home-cover.jpg",
-        "link": "nozing.html"
-      },
-      {
-        "name": "Product Manager",
-        "image": "home-cover.jpg",
-        "link": "nozing.html"
-      },
-      {
-        "name": "Product Manager",
-        "image": "home-cover.jpg",
-        "link": "nozing.html"
-      },
-      {
-        "name": "Product Manager",
-        "image": "home-cover.jpg",
-        "link": "nozing.html"
+        "link": "blog/joinus/join%20us!/2018/07/27/Buscamos-Front-PHP-maquetador.html"
       }
     ]
   },

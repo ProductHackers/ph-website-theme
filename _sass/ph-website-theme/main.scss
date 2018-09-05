@@ -27,10 +27,12 @@ body {
     background-color: white;
   }
 
-  .page-wrapper {
-    main.page-content {
-      padding-top: 0px;
-      min-height: calc(100% - 94px);
+  &.blog {
+    .page-wrapper {
+      main.page-content {
+        padding-top: 105px;
+        min-height: calc(100% - 94px);
+      }
     }
   }
 }

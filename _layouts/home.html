@@ -5,9 +5,7 @@ layout: default
 
 <section class="h-section__intro">
   <div class="video__container">
-    <video class="cover" playsinline autoplay muted loop>
-      <source src="{{ site.baseurl }}/assets/videos/home-header.mp4" type="video/mp4">
-    </video>
+    <video id="home-video" class="cover" playsinline autoplay muted loop></video>
   </div>
   <div class="bottom__text">
     <h1>{{ site.data.home.section_intro.cta_text }}</h1>
@@ -94,7 +92,3 @@ layout: default
       </div>
   </div>
 </section>
-
-<script>
-  document.querySelector('body').classList.add('joinus');
-</script>

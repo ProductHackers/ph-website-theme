@@ -104,6 +104,7 @@ section.h-section__hiring {
     grid-row-gap: 70px;
     justify-content: center;
     padding-top: 49px;
+    max-width: 258px;
 
     .job {
       position: relative;
@@ -316,6 +317,12 @@ section.h-section__dontworry {
         line-height: 28px;
         margin-top: 40px;
       }
+    }
+  }
+
+  section.h-section__hiring {
+    .hiring__card {
+      max-width: 100%;
     }
   }
 }
