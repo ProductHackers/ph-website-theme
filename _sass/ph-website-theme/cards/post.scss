@@ -30,6 +30,10 @@
     line-height: 16px;
     font-weight: 800;
 
+    a {
+      grid-column-end: span 3;
+    }
+
     .post__category {
       grid-row-start: 1;
       grid-column-start: 1;
