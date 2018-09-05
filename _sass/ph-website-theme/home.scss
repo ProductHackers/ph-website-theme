@@ -6,11 +6,24 @@ section.h-section__intro {
   width: 100%;
   min-height: 100vh;
   background-color: #D8D8D8;
-  background-image: url('../images/home-cover.jpg');
   background-size: cover;
   background-position-y: 58%;
   display: grid;
   align-items: center;
+  overflow: hidden;
+
+  .video__container {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+
+    video.cover {
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+    }
+  }
 
   .bottom__text {
     display: grid;
@@ -20,6 +33,7 @@ section.h-section__intro {
     line-height: 20px;
     text-align: center;
     margin-bottom: 100px;
+    z-index: 1;
 
     h1 {
       color: white;
