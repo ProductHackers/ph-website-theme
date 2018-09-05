@@ -56,6 +56,10 @@ body > .page-wrapper > main.page-content.post-default {
       font-size: 12px;
       line-height: 16px;
       font-weight: 800;
+
+      a {
+        grid-column-end: span 3;
+      }
   
       .post__category {
         grid-row-start: 1;
@@ -98,6 +102,8 @@ body > .page-wrapper > main.page-content.post-default {
       display: grid;
       width: 100%;
       justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
 
       iframe.youtube {
         width: 500px;
