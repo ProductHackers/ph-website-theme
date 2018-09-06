@@ -6,12 +6,14 @@ h1.hero__text {
 }
 
 section.h-section__join {
+  position: relative;
   width: 100%;
   background-color: $grey-background-dark;
   background-image: url('../images/unete-header.jpg');
   background-size: cover;
   display: grid;
   grid-template-columns: 60%;
+  overflow: hidden;
 
   .intro__text {
     width: 100%;
@@ -20,6 +22,7 @@ section.h-section__join {
     padding-bottom: 105px;
     padding-left: 110px;
     padding-right: 110px;
+    z-index: 1;
 
     h1.hero__text {
       font-size: 60px;
@@ -38,6 +41,17 @@ section.h-section__join {
       margin-top: 58px;
     }
   }
+}
+section.h-section__join::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
 }
 
 section.h-section__about {
