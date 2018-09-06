@@ -22,7 +22,7 @@ section.h-section__join {
     padding-bottom: 105px;
     padding-left: 110px;
     padding-right: 110px;
-    z-index: 1;
+    z-index: 0;
 
     h1.hero__text {
       font-size: 60px;
@@ -42,14 +42,13 @@ section.h-section__join {
     }
   }
 }
-section.h-section__join::after {
+section.h-section__join::before {
   content: '';
-  display: block;
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   background-color: black;
   opacity: 0.5;
 }
