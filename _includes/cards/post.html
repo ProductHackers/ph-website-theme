@@ -6,7 +6,11 @@
   {% endif %}
   <a href="{{ site.baseurl }}{{ include.post_link }}"><h2 class="post__title">{{ include.post_title }}</h2></a>
   <div class="extra__info">
+    {% if include.post_category == 'blog' %}
+    <a href="{{ site.baseurl }}/{{ include.post_category_url }}"><span class="post__category">{{ include.post_category }}</span></a>
+    {% else %}
     <a href="{{ site.baseurl }}/category/{{ include.post_category_url }}"><span class="post__category">{{ include.post_category }}</span></a>
+    {% endif %}
     <span class="date">{{ include.post_date | date_to_long_string }}</span>
     <span class="separator">-</span>
     <span class="author">{{ include.post_author }}</span>
